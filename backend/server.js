@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const productRoutes = require('./routes/product.routes');
 
@@ -12,9 +13,12 @@ app.use(express.json());
 // Routes
 app.use('/api', productRoutes);
 
-// Health check
-app.get('/', (req, res) => {
-  res.send('Tamales & Repostería API is running!');
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, '../frontend/dist/frontend/browser')));
+
+// Fallback to index.html for Angular routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/frontend/browser/index.html'));
 });
 
 app.listen(PORT, () => {

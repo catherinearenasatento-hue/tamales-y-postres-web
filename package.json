@@ -1,0 +1,9 @@
+{
+  "name": "tamales-y-postres-web",
+  "version": "1.0.0",
+  "description": "Root package for deploying to Render",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "node backend/server.js"
+  }
+}
