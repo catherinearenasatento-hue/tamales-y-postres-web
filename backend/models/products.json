@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Tamal Pequeño",
+    "description": "Delicioso tamal tradicional en tamaño personal.",
+    "price": 4000,
+    "category": "Tamales",
+    "image": "assets/tamal-pequeno.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tamal Mediano",
+    "description": "Tamal con doble carne, ideal para el almuerzo.",
+    "price": 6000,
+    "category": "Tamales",
+    "image": "assets/tamal-mediano.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tamal Grande",
+    "description": "El clásico tamal tolimense extra grande con todo.",
+    "price": 8000,
+    "category": "Tamales",
+    "image": "assets/tamal-grande.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Torta de Vainilla y Arequipe",
+    "description": "Torta suave en porción con relleno de arequipe.",
+    "price": 3500,
+    "category": "Repostería",
+    "image": "assets/torta.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cupcake Decorado",
+    "description": "Hermoso cupcake decorado para ocasiones especiales.",
+    "price": 2500,
+    "category": "Repostería",
+    "image": "assets/cupcake.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Gelatina de Colores",
+    "description": "Gelatina con mosaico de colores y leche condensada.",
+    "price": 1500,
+    "category": "Repostería",
+    "image": "assets/gelatina.jpg"
+  }
+]
