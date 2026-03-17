@@ -14,11 +14,12 @@ app.use(express.json());
 app.use('/api', productRoutes);
 
 // Serve static frontend files
-app.use(express.static(path.join(__dirname, '../frontend/dist/frontend/browser')));
+const frontendPath = path.join(process.cwd(), 'frontend/dist/frontend/browser');
+app.use(express.static(frontendPath));
 
 // Fallback to index.html for Angular routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist/frontend/browser/index.html'));
+app.get(/^(.*)$/, (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 app.listen(PORT, () => {
